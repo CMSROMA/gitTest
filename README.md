@@ -91,23 +91,17 @@ Now, an example, still conceptual without commands:
 ``git merge plotMacro``
  - now I can update my github repository pushing the master branch to the origin (the repository from which I've done the clone)
 ``git push origin master``
+ - redo all the commits and changes with another branch: newSelection
+ - move to the newSelection branch
+``git checkout newSelection``
+ - create files and directories, add them to the repository and commit
+ - now we have not finished and you want to keep the branch tracked in the repository on github
+git push origin newSelection
+ - this have created a newSelection branch on github with your commits
 
-Now I'm trying to modify these file
+### Collaborative work on the same branch
+It's fine to work in more than one on the same github repository, but I advice to 
+- start from the same point
+- use the master or a new branch to coordinate
+- make one branch per person and merge frequenty solving conflicts
 
-How to import in CMSSW from a personal repository
-
-Structure you repository as a sub-package of CMSSW.
-Example: in you repository create a directory named Calibration as the one in CMSSW
-Calibration/myFolder
-
-commit into your repository as a specific branch
-
-in a CMSSW release add the CMSSW package in which you want to add your code
-
-git cms-addpkg Calibration
-# add your repository in the list of repos (remote branches will be looked also there)
-git remote add -f ecalelff https://:@git.cern.ch/kerberos/ecalelf
-# create a local branch pointing to the remote one you created
-git checkout -b from_ecalelff ecalelff/cmsswMigration
-git checkout from-CMSSW_6_2_0_pre8
-git merge from_ecalelff
