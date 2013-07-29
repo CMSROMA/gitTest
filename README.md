@@ -100,10 +100,11 @@ git push origin newSelection
  - this have created a newSelection branch on github with your commits
  - Only when you have finished, you are ready to propose your changes to the main repository
    - You need to have merged everything you want to propose to the master 
-    ``git checkout master
-      git merge newSelection
-      git push origin master
-``
+
+    ``git checkout master``
+    ``git merge newSelection``
+    ``git push origin master``
+
    - make pull request on github selecting the master on your github area and the master of the gitTest (or the repository you forked)
 ### Collaborative work on the same branch
 It's fine to work in more than one on the same github repository, but I advice to 
