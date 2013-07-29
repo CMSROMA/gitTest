@@ -86,7 +86,11 @@ Now, an example, still conceptual without commands:
 ``git commit -m "changin only file2.C"``
  - now change also shervin.C, add a new file3.C and commit all changed files
 ``git commit -m "only tracked files are committed!" -a``
-
+ - if I finished with all the development with this branch I can merge it with the master:
+``git checkout master``
+``git merge plotMacro``
+ - now I can update my github repository pushing the master branch to the origin (the repository from which I've done the clone)
+``git push origin master``
 
 Now I'm trying to modify these file
 
