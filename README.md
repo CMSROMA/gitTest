@@ -60,7 +60,32 @@ Now, an example, still conceptual without commands:
  - another day I can switch to one of the remaining branches to continue to work, then I will merge with the master once finished and I push the master.
 
 
-
+### Practical example with instructions
+ - Fork the gitTest into your github by clicking on the fork button
+ - clone it into your computer or area (I do it using the CMSROMA/gitTest link, you should use the one of your github area)
+``git clone git@github.com:CMSROMA/gitTest.git``
+ - create the branches indicated in the example before
+``git branch newSelection``
+``git branch puReweight``
+``git branch plotMacro``
+ - I move to the plotMacro branch
+``git checkout plotMacro``
+ - create a new file: shervin.C
+``touch shervin.C``
+ - add this file to the list of tracked file: the files that are under revision
+``git add shervin.C``
+ - add 2 new files in a new directory
+``mkdir macro/; touch file1.C; touch file2.C``
+ - add all files in the new directory (you cannot add empty directory!)
+``git add macro``
+ - now commit every change
+``git commit -m "log message" -a``
+ - now modify file2.C and file1.C
+ - commit only file2.C
+``git add macro/file2.C``
+``git commit -m "changin only file2.C"``
+ - now change also shervin.C, add a new file3.C and commit all changed files
+``git commit -m "only tracked files are committed!" -a``
 
 
 Now I'm trying to modify these file
