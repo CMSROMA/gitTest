@@ -102,7 +102,9 @@ git push origin newSelection
    - You need to have merged everything you want to propose to the master 
 
     ``git checkout master``
+    
     ``git merge newSelection``
+    
     ``git push origin master``
 
    - make pull request on github selecting the master on your github area and the master of the gitTest (or the repository you forked)
