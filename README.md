@@ -68,6 +68,10 @@ Now, an example, still conceptual without commands:
 ``git branch newSelection``
 ``git branch puReweight``
 ``git branch plotMacro``
+ - full list of branches:
+``git branch -a``
+  the one with the asterisk is the one where you are. There are the 3 that you have created. There are some branches remotes/origin/... origin is the repository from which you have done the clone
+
  - I move to the plotMacro branch
 ``git checkout plotMacro``
  - create a new file: shervin.C
