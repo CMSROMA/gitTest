@@ -127,4 +127,21 @@ If you do: ``git branch -a`` you have the list of branches, local and remote
 By doing ``git remote -v`` you have the list of remote repository that you are linked to
 By default you have "origin" that is the github repository from which you have performed the ``git clone`` (usually your github repository that is a fork of the central one)
 
+In my case I have:
 
+``origin  git@github.com:shervin86/gitTest.git (fetch)``
+
+``origin  git@github.com:shervin86/gitTest.git (push)``
+
+Now I want to add the central CMSROMA/gitTest repository to keep my version updated, so
+``git remote add CMSROMA git@github.com:CMSROMA/gitTest.git``
+
+and I see by doing ``git remote -v``
+
+``CMSROMA git@github.com:CMSROMA/gitTest.git (fetch)``
+
+``CMSROMA git@github.com:CMSROMA/gitTest.git (push)``
+
+``origin  git@github.com:shervin86/gitTest.git (fetch)``
+
+``origin  git@github.com:shervin86/gitTest.git (push)``
