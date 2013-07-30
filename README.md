@@ -145,3 +145,25 @@ and I see by doing ``git remote -v``
 ``origin  git@github.com:shervin86/gitTest.git (fetch)``
 
 ``origin  git@github.com:shervin86/gitTest.git (push)``
+
+By doing:``git branch -a`` you should not see any difference yet.
+
+I need still to update the informations about the new CMSROMA remote:
+``git fetch CMSROMA``
+the result is:
+
+``From github.com:CMSROMA/gitTest
+ * [new branch]    master     -> CMSROMA/master
+ * [new branch]    shervin    -> CMSROMA/shervin
+``
+Now you have the list of the branches on CMSROMA by doing ``git branch -a``
+
+To update your master, first update with your github (origin)
+``git checkout master``
+``git pull origin``
+``git pull CMSROMA``
+
+Attention! The pull always merges and commit.
+
+Now your local branch master is updated, you can push it into your github repository.
+``git push origin master``
