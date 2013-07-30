@@ -152,10 +152,10 @@ I need still to update the informations about the new CMSROMA remote:
 ``git fetch CMSROMA``
 the result is:
 
-``From github.com:CMSROMA/gitTest
+From github.com:CMSROMA/gitTest
  * [new branch]    master     -> CMSROMA/master
  * [new branch]    shervin    -> CMSROMA/shervin
-``
+
 Now you have the list of the branches on CMSROMA by doing ``git branch -a``
 
 To update your master, first update with your github (origin)
