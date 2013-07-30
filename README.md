@@ -118,3 +118,13 @@ It's fine to work in more than one on the same github repository, but I advice t
 - use the master or a new branch to coordinate
 - make one branch per person and merge frequenty solving conflicts
 
+
+=====
+## Working with updating repository (Globe)
+
+All instructions are still valid, but you now need a way to keep your master updated with the  central repository (the one that you forked at the beginning)
+If you do: ``git branch -a`` you have the list of branches, local and remote
+By doing ``git remote -v`` you have the list of remote repository that you are linked to
+By default you have "origin" that is the github repository from which you have performed the ``git clone`` (usually your github repository that is a fork of the central one)
+
+
