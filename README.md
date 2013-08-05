@@ -1,5 +1,12 @@
 gitTest
 =======
+
+Subscribe:
+ - Follow the "How do I subscribe to github?" paragraph of http://cms-sw.github.io/cmssw/faq.html 
+ - https://help.github.com/articles/generating-ssh-keys
+ - https://help.github.com/articles/working-with-ssh-key-passphrases
+
+=======
 How to work on git (my personal experience)
 
 You can work on two type of repository on github
